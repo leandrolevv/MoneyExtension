@@ -5,8 +5,9 @@ on:
     branch:
       -Main
 
-Run:
-  runs-on: unbutu-latest
+jobs:
+  build-and-deploy:
+    runs-on: unbutu-latest
 
   steps:
     - uses: actions/checkout@Main
