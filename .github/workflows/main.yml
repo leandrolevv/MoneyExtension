@@ -10,21 +10,21 @@ jobs:
     runs-on: unbutu-latest
 
   steps:
-    - uses: actions/checkout@Main
+  - uses: actions/checkout@Main
 
-    - name: Set Up .Net
-    - uses: actions/setup-dotnet@v3
-      with:
-        dotnet-version: '6.0.0'
+  - name: Set Up .Net
+    uses: actions/setup-dotnet@v3
+    with:
+      dotnet-version: '6.0.0'
     
-    - name: Build .Net
-    - run: dotnet build --configuration release
+  - name: Build .Net
+    run: dotnet build --configuration release
 
-    - name: Execute Tests
-    - run: dotnet test --configuration release
+  - name: Execute Tests
+    run: dotnet test --configuration release
 
-    - name: Execute nuget package
-    - run: dotnet pack --configuration release
+  - name: Execute nuget package
+    run: dotnet pack --configuration release
 
-    - name: Push do nuget
-    - run: dotnet nuget push "MoneyExtension/bin/release/*.nupkg" -k {{ secrets.NUGET_MONEYEXTENSION_TOKEN }} -s https://api.nuget.org/v3/index.json
+  - name: Push do nuget
+    run: dotnet nuget push "MoneyExtension/bin/release/*.nupkg" -k {{ secrets.NUGET_MONEYEXTENSION_TOKEN }} -s https://api.nuget.org/v3/index.json
