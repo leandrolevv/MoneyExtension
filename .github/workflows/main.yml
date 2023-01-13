@@ -13,4 +13,4 @@ jobs:
     
 
     - name: Push do nuget
-      run: dotnet nuget push "MoneyExtension/bin/Release/*.nupkg" -k {{secrets.NUGET_MONEYEXTENSION_TOKEN}} -s https://api.nuget.org/v3/index.json
+      run: dotnet nuget push "/MoneyExtension/bin/Release/*.nupkg" -k {{secrets.NUGET_MONEYEXTENSION_TOKEN}} -s https://api.nuget.org/v3/index.json
