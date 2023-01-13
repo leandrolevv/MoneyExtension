@@ -10,7 +10,20 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    
+    - uses: actions/checkout@main
+    - name: Setup dotnet
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: '7.0.x'
+      
+    - name: Build .Net
+      run: dotnet build --configuration release
+
+    - name: Execute Tests
+      run: dotnet test --configuration release
+
+    - name: Execute nuget package
+      run: dotnet pack --configuration release
 
     - name: Push do nuget
       run: dotnet nuget push "MoneyExtension/bin/Release/*.nupkg" -k {{secrets.NUGET_MONEYEXTENSION_TOKEN}} -s https://api.nuget.org/v3/index.json
