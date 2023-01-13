@@ -13,7 +13,7 @@
     <Description>Teste curso balta</Description>
     <RepositoryUrl>https://github.com/leandrolevv/MoneyExtension</RepositoryUrl>
     <PackageProjectUrl>https://github.com/leandrolevv/MoneyExtension</PackageProjectUrl>
-    <PackageLicenExpression>MIT</PackageLicenExpression>
+    <PackageLicenceExpression >MIT</PackageLicenceExpression >
     <PackageIcon>icon.png</PackageIcon>
     <PackageTags>teste;curso;ci/cd</PackageTags>
     <Title>MoneyExtension</Title>
