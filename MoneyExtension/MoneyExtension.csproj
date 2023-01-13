@@ -4,11 +4,13 @@
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    
     <PackageId>leandro-levvi-MoneyExtension</PackageId>
     <Version>1.0.0</Version>
     <icon>https://cdn-icons-png.flaticon.com/512/25/25694.png</icon>
     <License>MIT</License>
     <Authors>Leandro Arruda</Authors>
+    <Company>Leandro_Arruda</Company>
     <PackageDescription>Testa CI/CD</PackageDescription>
     <Description>Teste curso balta</Description>
     <RepositoryUrl>https://github.com/leandrolevv/MoneyExtension</RepositoryUrl>
@@ -16,9 +18,9 @@
     <PackageLicenceExpression >MIT</PackageLicenceExpression >
     <PackageIcon>icon.png</PackageIcon>
     <PackageTags>teste;curso;cicd</PackageTags>
+    <ReleaseNotes>Testando as Releases Notes</ReleaseNotes>
     <Title>MoneyExtension</Title>
     <Summary>Apenas teste para aprendizado</Summary>
-    <ReleaseNotes>Testando as Releases Notes</ReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
