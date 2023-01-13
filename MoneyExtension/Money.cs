@@ -5,11 +5,11 @@ public static class Money
         if (amount == 0)
             return 0;
         
-        var valor = amount.ToString("N2").Replace(".", "").Replace(",", "");
-        if(string.IsNullOrEmpty(valor))
+        var value = amount.ToString("N2").Replace(".", "").Replace(",", "");
+        if(string.IsNullOrEmpty(value))
             return 0;
 
-        int.TryParse(valor, out var result);
+        int.TryParse(value, out var result);
         return result;
     }
 }
