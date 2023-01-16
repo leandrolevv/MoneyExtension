@@ -5,7 +5,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     
-    <PackageId>leandro-levvi-MoneyExtension</PackageId>
+    <PackageId>leandro-levvi-MoneyExtension_2</PackageId>
     <Version>1.0.1</Version>
     <License>MIT</License>
     <icon>https://cdn-icons-png.flaticon.com/512/25/25694.png</icon>
